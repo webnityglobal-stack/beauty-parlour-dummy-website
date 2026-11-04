@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom Beauty | Ladies Beauty Studio</title>
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <a href="#" class="logo">BLOOM <span>BEAUTY</span>
+    <small>WOMEN'S BEAUTY STUDIO</small>
+  </a>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="appointment.html" class="book-btn">Book Appointment</a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <span class="tag">EXCLUSIVELY FOR WOMEN</span>
+    <h1>Discover Your<br>Natural <i>Beauty.</i></h1>
+    <p>Feel beautiful, confident and special. Experience luxury beauty treatments designed exclusively for women.</p>
+    <a href="service.html" class="primary-btn">Explore Services ↗</a>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=1000" alt="Beauty model">
+  </div>
+</section>
+
+<section class="about section" id="about">
+  <span class="tag">WELCOME TO BLOOM BEAUTY</span>
+  <h2>Beauty Is Our Passion, <i>Confidence Is Our Goal.</i></h2>
+  <p>We are a ladies-only beauty studio dedicated to making every woman feel beautiful. From everyday skincare to stunning bridal transformations, we care for every detail.</p>
+</section>
+
+<section class="services section" id="services">
+  <div class="section-heading">
+    <span class="tag">WHAT WE OFFER</span>
+    <h2>Our Beauty <i>Services</i></h2>
+    <p>Professional beauty care made just for you.</p>
+  </div>
+
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500" alt="Bridal Makeup">
+      <h3>Bridal Makeup</h3>
+      <p>Starting ₹12,999</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500" alt="Facial">
+      <h3>Facial & Skincare</h3>
+      <p>Starting ₹999</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500" alt="Nail Art">
+      <h3>Nail Art</h3>
+      <p>Starting ₹599</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1560869713-da86a9ec6d6d?w=500" alt="Hair Styling">
+      <h3>Hair Styling</h3>
+      <p>Starting ₹799</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500" alt="Pre Bridal">
+      <h3>Pre-Bridal</h3>
+      <p>Starting ₹7,999</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=500" alt="Party Makeup">
+      <h3>Party Makeup</h3>
+      <p>Starting ₹2,499</p>
+      <a href="appointment.html">Book Now ↗</a>
+    </div>
+  </div>
+</section>
+
+<section class="bridal">
+  <div class="bridal-img">
+    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1000" alt="Bridal beauty">
+  </div>
+
+  <div class="bridal-content">
+    <span class="tag">YOUR SPECIAL DAY</span>
+    <h2>Every Bride Deserves to Feel <i>Beautiful.</i></h2>
+    <p>Our expert artists create beautiful bridal looks that make your special moments memorable.</p>
+    <a href="contact.html" class="primary-btn">Explore Bridal Packages ↗</a>
+  </div>
+</section>
+
+<section class="gallery section" id="gallery">
+  <span class="tag">OUR BEAUTY WORLD</span>
+  <h2>Beauty In Every <i>Detail</i></h2>
+
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=700" alt="Beauty products">
+    <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=700" alt="Makeup look">
+    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=700" alt="Cosmetics">
+  </div>
+</section>
+
+<section class="contact section" id="contact">
+  <span class="tag">BOOK YOUR EXPERIENCE</span>
+  <h2>Ready For Your <i>Glow Up?</i></h2>
+  <p>Book your beauty appointment with us today.</p>
+
+  <form id="bookingForm">
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="tel" id="phone" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+
+    <select id="service" required>
+      <option value="">Select Service</option>
+      <option>Bridal Makeup</option>
+      <option>Party Makeup</option>
+      <option>Facial & Skincare</option>
+      <option>Hair Styling</option>
+      <option>Nail Art</option>
+      <option>Pre-Bridal</option>
+    </select>
+
+    <input type="date" id="date" required>
+    <button type="submit" class="primary-btn">Book Appointment ↗</button>
+  </form>
+</section>
+
+
+<!-- PROFESSIONAL FOOTER -->
+
+<footer class="beauty-footer">
+
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        Bloom<span>Beauty.</span>
+      </a>
+
+      <p>
+        Feel beautiful, feel confident. Experience premium beauty
+        and self-care services designed exclusively for women.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="service.html">Our Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Our Services</h3>
+      <a href="service.html">Bridal Makeup</a>
+      <a href="service.html">Hair Styling</a>
+      <a href="service.html">Skin Care</a>
+      <a href="service.html">Nail Art</a>
+      <a href="service.html">Spa & Wellness</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Get In Touch</h3>
+
+      <p><span>Phone</span>
+        <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+      </p>
+
+      <p><span>Email</span>
+        <a href="mailto:hello@bloombeauty.com">
+          hello@bloombeauty.com
+        </a>
+      </p>
+
+      <p><span>Location</span>
+        Your Salon Address, City, India
+      </p>
+
+      <p><span>Opening Hours</span>
+        Monday – Sunday, 10 AM – 8 PM
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-cta">
+    <div>
+      <h2>A Little Time For Yourself.</h2>
+      <p>You deserve to look and feel your absolute best.</p>
+    </div>
+
+    <a href="appointment.html">Book Your Appointment ↗</a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Bloom Beauty Parlour. All Rights Reserved.</p>
+    <p>Made with <span>♥</span> for every woman.</p>
+  </div>
+
+</footer>
+
+
+<a href="#" class="whatsapp" id="whatsapp">☏</a>
+
+<script src="script.js"></script>
+</body>
+</html>

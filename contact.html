@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact Us | Bloom Beauty Parlour</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+ <header class="header">
+  <a href="#" class="logo">BLOOM <span>BEAUTY</span>
+    <small>WOMEN'S BEAUTY STUDIO</small>
+  </a>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <a href="appointment.html" class="book-btn">Book Appointment</a>
+  <button class="menu-btn" id="menuBtn">☰</button>
+</header>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="contact-hero-content">
+      <span class="section-tag">WE WOULD LOVE TO HEAR FROM YOU</span>
+      <h1>Let's Get In <span>Touch</span></h1>
+      <p>
+        Have questions or want to book your beauty appointment?
+        We are here to help you.
+      </p>
+      <a href="#contact-form" class="primary-btn">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Contact Intro -->
+  <section class="contact-intro section-padding">
+    <span class="section-tag">CONTACT BLOOM BEAUTY</span>
+    <h2>Let's Make You Feel <span>Beautiful</span></h2>
+    <p>
+      Whether you need a beauty consultation or want to schedule
+      your next appointment, connect with our team today.
+    </p>
+  </section>
+
+  <!-- Contact Details -->
+  <section class="contact-details section-padding">
+
+    <div class="contact-info">
+
+      <div class="contact-info-card">
+        <div class="contact-icon">☎</div>
+        <div>
+          <h3>Call Us</h3>
+          <p>Speak with our beauty team.</p>
+          <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">✉</div>
+        <div>
+          <h3>Email Us</h3>
+          <p>Send us your questions.</p>
+          <a href="mailto:hello@bloombeauty.com">hello@bloombeauty.com</a>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">⌖</div>
+        <div>
+          <h3>Visit Our Salon</h3>
+          <p>We would love to welcome you.</p>
+          <span>Your Salon Address, City, India</span>
+        </div>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-icon">◷</div>
+        <div>
+          <h3>Opening Hours</h3>
+          <p>Plan your beauty visit.</p>
+          <span>Monday – Sunday: 10 AM – 8 PM</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-box" id="contact-form">
+
+      <span class="section-tag">BOOK YOUR VISIT</span>
+      <h2>Make An <span>Appointment</span></h2>
+      <p>Fill out the form and we will get in touch with you.</p>
+
+      <form id="appointmentForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name *</label>
+            <input type="text" id="name" name="name"
+              placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+              placeholder="Enter phone number"
+              pattern="[0-9]{10}" maxlength="10" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email"
+            placeholder="Enter your email">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Select Service *</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Makeup</option>
+              <option>Bridal Makeup</option>
+              <option>Hair Styling</option>
+              <option>Facial & Skin Care</option>
+              <option>Nail Art & Care</option>
+              <option>Manicure & Pedicure</option>
+              <option>Waxing & Grooming</option>
+              <option>Spa & Body Care</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Appointment Date *</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="time">Preferred Time *</label>
+          <select id="time" name="time" required>
+            <option value="">Choose a time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>01:00 PM</option>
+            <option>02:00 PM</option>
+            <option>03:00 PM</option>
+            <option>04:00 PM</option>
+            <option>05:00 PM</option>
+            <option>06:00 PM</option>
+            <option>07:00 PM</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message"
+            rows="4" placeholder="Tell us more about your requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn submit-btn">
+          Book Appointment via WhatsApp
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+  <!-- Map -->
+  <section class="map-section">
+    <div class="section-heading">
+      <span class="section-tag">FIND US</span>
+      <h2>Visit Our <span>Salon</span></h2>
+      <p>We are waiting to welcome you.</p>
+    </div>
+
+    <div class="map-placeholder">
+      <p>Add your salon's Google Maps location here.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact-cta">
+    <span class="section-tag">YOUR BEAUTY JOURNEY STARTS HERE</span>
+    <h2>You Deserve A Little <span>Me Time</span></h2>
+    <p>Take a break, relax and let us take care of you.</p>
+    <a href="appointment.html" class="primary-btn">Book Your Appointment</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="beauty-footer">
+
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">
+        Bloom<span>Beauty.</span>
+      </a>
+
+      <p>
+        Feel beautiful, feel confident. Experience premium beauty
+        and self-care services designed exclusively for women.
+      </p>
+
+      <div class="footer-social">
+        <a href="https://instagram.com/" target="_blank">Instagram</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="service.html">Our Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h3>Our Services</h3>
+      <a href="service.html">Bridal Makeup</a>
+      <a href="service.html">Hair Styling</a>
+      <a href="service.html">Skin Care</a>
+      <a href="service.html">Nail Art</a>
+      <a href="service.html">Spa & Wellness</a>
+    </div>
+
+    <div class="footer-contact">
+      <h3>Get In Touch</h3>
+
+      <p><span>Phone</span>
+        <a href="tel:+919XXXXXXXXX">+91 9XXXXXXXXX</a>
+      </p>
+
+      <p><span>Email</span>
+        <a href="mailto:hello@bloombeauty.com">
+          hello@bloombeauty.com
+        </a>
+      </p>
+
+      <p><span>Location</span>
+        Your Salon Address, City, India
+      </p>
+
+      <p><span>Opening Hours</span>
+        Monday – Sunday, 10 AM – 8 PM
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-cta">
+    <div>
+      <h2>A Little Time For Yourself.</h2>
+      <p>You deserve to look and feel your absolute best.</p>
+    </div>
+
+    <a href="appointment.html">Book Your Appointment ↗</a>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Bloom Beauty Parlour. All Rights Reserved.</p>
+    <p>Made with <span>♥</span> for every woman.</p>
+  </div>
+
+</footer>
+
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
